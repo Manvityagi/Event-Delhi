@@ -53,7 +53,10 @@ class RegistrationForm extends React.Component {
     );
 
     return (
-      <Form onSubmit={this.handleSubmit}>
+      <Form 
+        style={{maxWidth: '300px'}}
+        onSubmit={this.handleSubmit}
+      >
         <Form.Item label="E-mail">
           {getFieldDecorator("email", {
             rules: [

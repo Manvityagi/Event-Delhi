@@ -6,7 +6,7 @@ export const Routes = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/" exact component={() => <div>HIHI</div>} />
+        <Route path="/" exact component={() => <div>Work in Progress</div>} />
         <Route path="/auth" component={Auth} />
         <Route component={() => <div>NOT FOUND</div>} />
       </Switch>

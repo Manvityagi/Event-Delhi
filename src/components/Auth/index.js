@@ -1,5 +1,5 @@
 import React from "react";
-import { Login, SignUp } from "./components";
+import { Login, SignUp, Wrapper } from "./components";
 
 class Auth extends React.Component {
   state = {
@@ -13,10 +13,11 @@ class Auth extends React.Component {
   };
 
   render() {
-    if (!this.state.isLogin) {
-      return <SignUp toggleScreen={this.toggleScreen} />;
-    }
-    return <Login toggleScreen={this.toggleScreen} />;
+    return (
+      <Wrapper>
+        {this.state.isLogin ? <Login toggleScreen={this.toggleScreen} /> : <SignUp toggleScreen={this.toggleScreen} />}
+      </Wrapper>
+    );
   }
 }
 
