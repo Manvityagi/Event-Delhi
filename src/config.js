@@ -5,3 +5,7 @@ export const END_POINT = {
   // LOG_OUT: '/logout',
   SIGN_UP: "/signup"
 };
+
+/*
+  Mobile Width >= 1200px
+ */
